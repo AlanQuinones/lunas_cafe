@@ -11,7 +11,7 @@
 </script>
 <style>
 .main {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'quicksand', sans-serif;
   font-size: 16px;
   color: #333;
   background-color: #E6CCB2;
