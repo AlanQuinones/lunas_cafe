@@ -21,10 +21,10 @@ export default {
     return {
       model: 0,  // Controla la diapositiva actual del carrusel
       items: [
-        { src: jugos, id: 1, title: 'Jugos', description: 'Jugos naturales' },
-        { src: lonche, id: 2, title: 'Lonches', description: 'Lonches de jamón, queso, etc.' },
+        { src: jugos, id: 1, title: 'Cafe', description: 'Orange Coffe' },
+        { src: lonche, id: 2, title: 'Paninis', description: 'Panini Original, etc.' },
         { src: pan, id: 3, title: 'Pan', description: 'Pan dulce y salado' },
-        { src: panini, id: 4, title: 'Panini', description: 'Panini de jamón, queso, etc.' },
+        { src: panini, id: 4, title: 'Panini', description: 'Panini Original, etc.' },
       ],
       heart: mdiHeart,
     }
