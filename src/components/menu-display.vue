@@ -91,7 +91,7 @@ export default {
 .title-section {
   text-align: center;
   font-size: 1.8rem;
-  margin: 1rem 2rem -1rem 2rem;
+  margin: 6rem 2rem -1rem 2rem;
   font-family: 'quicksand', sans-serif;
   color: #2C2C30;
 }

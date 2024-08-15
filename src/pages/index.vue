@@ -1,11 +1,16 @@
 <template>
   <Navbar titlePage="Luna's Cafe" />
+  <h2 id="inicio"></h2>
   <MenuDisplay />
-  <v-divider inset class="division-bar"></v-divider>
+  <h2 id="menu"></h2>
+  <Menu />
+  <Ubicacion />
 </template>
 <script setup>
 import Navbar from '@/components/navbar.vue';
 import MenuDisplay from '@/components/menu-display.vue';
+import Menu from '@/components/menu.vue';
+import Ubicacion from '@/components/ubicacion.vue';
 </script>
 <style>
 .division-bar {

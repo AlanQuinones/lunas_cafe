@@ -16,4 +16,8 @@
   color: #333;
   background-color: #E6CCB2;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 </style>
