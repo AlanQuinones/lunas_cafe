@@ -43,6 +43,10 @@ export default {
       <v-carousel-item v-for="(item, i) in items" :key="item.id" :value="i" :src="item.src" cover class="carrousel-image">
       </v-carousel-item>
     </v-carousel>
+    <v-carousel v-model="model" class="carrousel-phone" hide-delimiters>
+      <v-carousel-item v-for="(item, i) in items" :key="item.id" :value="i" :src="item.src" cover class="carrousel-image">
+      </v-carousel-item>
+    </v-carousel>
     <div tile class="carrousel-title">
       <div class="text-h2">{{ items[model].title }}</div>
       <div class="text-h3">{{ items[model].description }}</div>
@@ -100,9 +104,15 @@ export default {
   color: #2C2D30;
 }
 
+.carrousel-phone {
+  display: none;
+}
+
 @media (max-width: 900px) {
   .carrousel-container {
     flex-direction: column;
+    font-size: 1.5rem;
+    margin: 3rem 0;
   }
   .carrousel-title {
     padding: 10px;
@@ -115,16 +125,20 @@ export default {
     background: linear-gradient(180deg, rgba(0,0,0,1) 4%, rgba(0,0,0,0) 100%);
     color: white;
   }
-  .carrousel {
+  .carrousel-phone {
+    display: block;
     position: absolute;
     max-width: 100%;
     margin: 0;
     border-radius: 0;
   }
 
+  .carrousel {
+    display: none;
+  }
+
   .title-section {
-    font-size: 1.5rem;
-    margin: 1rem 0;
+    display: none;
   }
 
   .text-h2 {
