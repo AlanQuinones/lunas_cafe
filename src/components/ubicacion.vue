@@ -25,7 +25,7 @@ export default {
 </script>
 
 <template>
-  <h2 class="title-section-ubicacion" id="ubicacion">
+  <h2 class="title-section-ubicacion">
     Ubicacion
   </h2>
   <div class="ubicacion">

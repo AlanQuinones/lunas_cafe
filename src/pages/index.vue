@@ -4,7 +4,10 @@
   <MenuDisplay />
   <h2 id="menu"></h2>
   <Menu />
+  <h2 id="ubicacion"></h2>
   <Ubicacion />
+  <h2 id="contacto"></h2>
+  <Contacto />
 </template>
 <script setup>
 import Navbar from '@/components/navbar.vue';
