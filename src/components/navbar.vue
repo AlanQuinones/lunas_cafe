@@ -24,10 +24,10 @@ export default {
         location: mdiMapMarker,
         menu: mdiMenu,
         sections: [
-          { title: 'Inicio', path: '/' },
-          { title: 'Menu', path: '/menu' },
-          { title: 'Ubicacion', path: '/ubicacion' },
-          { title: 'Contacto', path: '/contacto' }
+          { title: 'Inicio', path: '#inicio' },
+          { title: 'Menu', path: '#menu' },
+          { title: 'Ubicacion', path: '#ubicacion' },
+          { title: 'Contacto', path: '#contacto' }
         ]
 		}
 	}
@@ -68,7 +68,11 @@ export default {
           :key="index"
           :value="index"
         >
-          <v-list-item-title>{{ section.title }}</v-list-item-title>
+          <v-list-item-title>
+            <a :href="section.path" class="links">
+              {{ section.title }}
+            </a>
+          </v-list-item-title>
         </v-list-item>
       </v-list>
     </v-menu>
@@ -82,6 +86,9 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
 }
 
 .links {
