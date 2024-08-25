@@ -4,6 +4,8 @@
   <MenuDisplay />
   <h2 id="menu"></h2>
   <Menu />
+  <h2 id="Horario"></h2>
+  <Horario />
   <h2 id="ubicacion"></h2>
   <Ubicacion />
   <h2 id="contacto"></h2>
@@ -13,6 +15,7 @@
 import Navbar from '@/components/navbar.vue';
 import MenuDisplay from '@/components/menu-display.vue';
 import Menu from '@/components/menu.vue';
+import Horario from '@/components/horario.vue';
 import Ubicacion from '@/components/ubicacion.vue';
 </script>
 <style>
