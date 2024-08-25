@@ -3,10 +3,6 @@
     data: () => ({
       icons: [
         {
-          icon: 'mdi-facebook',
-          link: 'https://www.facebook.com/profile.php?id=61559654351695',
-        },
-        {
           icon: 'mdi-instagram',
           link: 'https://www.instagram.com/lunasoficcial23/',
         },
@@ -17,7 +13,7 @@
 <template>
   <v-footer class="flex flex-column social-media-container">
     <div>
-      <strong>Contactanos en nuestras redes sociales</strong>
+      <strong>Encuentranos en nuestras redes sociales</strong>
       <v-spacer></v-spacer>
       <v-btn
         v-for="icon in icons"
