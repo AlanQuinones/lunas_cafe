@@ -5,6 +5,7 @@ import pan from '@/assets/pan.jpeg'
 import panini from '@/assets/panini.jpeg'
 import SvgIcon from '@jamescoyle/vue-icon';
 import { mdiHeart } from '@mdi/js';
+import Horario from '@/assets/Horario2.jpeg';
 
 export default {
   name: 'Menu-display',
@@ -23,8 +24,9 @@ export default {
       items: [
         { src: jugos, id: 1, title: 'Cafe', description: 'Orange Coffe' },
         { src: lonche, id: 2, title: 'Paninis', description: 'Panini Original, etc.' },
-        { src: pan, id: 3, title: 'Pan', description: 'Pan dulce y salado' },
+        { src: pan, id: 3, title: 'Panaderia', description: 'Pan dulce y salado' },
         { src: panini, id: 4, title: 'Panini', description: 'Panini Original, etc.' },
+        { src: Horario, id: 5, title: 'Horario', description: 'Horario de operaciones' },
       ],
       heart: mdiHeart,
     }
