@@ -1,42 +1,44 @@
 <script>
-import FoodComponent from '@/components/food-component.vue';
-import { mdiFoodForkDrink } from '@mdi/js';
+import ScheduleComponent from '@/components/schedule-component.vue';
+
 
 export default {
   name: 'Horario',
   components: {
-    // SvgIcon,
-    FoodComponent,
+    ScheduleComponent,
   },
   data(){
     return {
-      drinks: [
+      shedule: [
         {
-          name: 'Latte',
-          price: 75,
+          day: 'Lunes',
+          time: 'cerrado',
         },
         {
-          name: 'Capuccino',
-          price: 85,
+          day: 'Martes',
+          time: 'cerrado',
         },
         {
-          name: 'Americano',
-          price: 50,
+          day: 'Miercoles',
+          time: '4:00pm - 9:00pm',
         },
         {
-          name: 'Mocha',
-          price: 90,
+          day: 'Jueves',
+          time: '4:00pm - 9:00pm',
         },
         {
-          name: 'Orange Coffee',
-          price: 65,
+          day: 'Viernes',
+          time: '4:00pm - 9:00pm',
         },
         {
-          name: 'Agua de limon',
-          price: 45,
+          day: 'Sabado',
+          time: '9:00am - 9:00pm',
+        },
+        {
+          day: 'Domingo',
+          time: '9:00am - 9:00pm',
         }
       ],
-      foodIcon: mdiFoodForkDrink
     }
   }
 }
@@ -49,9 +51,8 @@ export default {
   </h2>
   <div class="menu-section">
     <div class="menu-section--drinks">
-      <h2 class="menu-title">Bebidas</h2>
-      <div v-for="drink in drinks" class="menu-drinks">
-        <FoodComponent :name="drink.name" :price="drink.price" class="drink"/>
+      <div v-for="days in shedule" class="menu-drinks">
+        <ScheduleComponent :day="days.day" :time="days.time" class="drink"/>
       </div>
     </div>
   </div>
