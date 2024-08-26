@@ -82,7 +82,7 @@ export default {
       </div>
     </div>
     <div class="menu-section--foods">
-      <h2 class="menu-title">Comida</h2>
+      <h2 class="menu-title">Alimentos</h2>
       <div v-for="food in foods" class="menu-foods">
         <FoodComponent :name="food.name" :price="food.price" :description="food.description" class="food"/>
       </div>
