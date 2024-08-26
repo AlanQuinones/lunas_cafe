@@ -26,6 +26,7 @@ export default {
         sections: [
           { title: 'Inicio', path: '#inicio' },
           { title: 'Menu', path: '#menu' },
+          { title: 'Horario', path: '#Horario' },
           { title: 'Ubicacion', path: '#ubicacion' },
           { title: 'Contacto', path: '#contacto' }
         ]
