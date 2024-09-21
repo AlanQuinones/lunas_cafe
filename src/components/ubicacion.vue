@@ -1,23 +1,25 @@
 <script>
+import jugos from '@/assets/jugos.jpeg'
+import barra from '@/assets/barra.jpeg'
+import entradaDesdeCalle from '@/assets/entradaDesdeCalle.jpeg'
+import NumOficial from '@/assets/NumOficial.jpeg'
+import PanMMOlla from '@/assets/PanMMOlla.jpeg'
+import EspressoShot from '@/assets/EspressoShot.jpeg'
+import panini from '@/assets/panini.jpeg'
+
 export default {
   name: 'Ubicacion',
   data() {
     return {
       model: 0,
       images: [
-        // random places
-        {
-          src: 'https://img.rtve.es/imagenes/cafeterias-bonitas-espana-dia-internacional-cafe/1601401240006.jpg',
-        },
-        {
-          src: 'https://mardomdecor.com/app/uploads/2023/03/CAFETERIA-2.jpeg',
-        },
-        {
-          src: 'https://pisoocho.com.mx/wp-content/uploads/2020/06/Cafe-y-IPAD-horizontal-min-scaled.jpg',
-        },
-        {
-          src: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/8e/35/0e/tomate-cafe.jpg',
-        },
+        { src: barra, id: 1, title: 'Barra', description: 'Barra' },
+        { src: entradaDesdeCalle, id: 2, title: 'entrada', description: 'entrada por calle' },
+        { src: NumOficial, id: 3, title: 'num', description: 'num' },
+        { src: PanMMOlla, id: 4, title: 'panMM', description: 'panMM' },
+        { src: EspressoShot, id: 5, title: 'es', description: 'es' },
+        { src: panini, id: 6, title: 'panini', description: 'panini' },
+        
       ]
     }
   }
