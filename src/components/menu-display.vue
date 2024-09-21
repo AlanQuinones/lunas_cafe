@@ -1,5 +1,5 @@
 <script>
-import orangeCoffe from '@/assets/orangeCoffe.jpeg'
+import orangeCoffe from '@/assets/oraCoffe.jpeg'
 import lonche from '@/assets/lonche.jpeg'
 import pan from '@/assets/pan.jpeg'
 import panini from '@/assets/panini.jpeg'
@@ -26,7 +26,7 @@ export default {
       model: 0,  // Controla la diapositiva actual del carrusel
       items: [
         { src: orangeCoffe, id: 1, title: 'Cafe', description: 'Orange Coffe' },
-        { src: mocha, id:2, tittle: 'Cafe frio', description: 'Mocha Frio'},
+        { src: mocha, id:2, title: 'Cafe frio', description: 'Mocha Frio'},
         { src: lonche, id: 3, title: 'Paninis', description: 'Panini Original' },
         { src: pan, id: 4, title: 'Panaderia', description: 'Pan dulce y salado' },
         { src: panini, id: 5, title: 'Panini', description: 'Panini Original' },
