@@ -1,23 +1,25 @@
 <script>
+import jugos from '@/assets/jugos.jpeg'
+import barra from '@/assets/barra.jpeg'
+import entradaDesdeCalle from '@/assets/entradaDesdeCalle.jpeg'
+import NumOficial from '@/assets/NumOficial.jpeg'
+import PanMMOlla from '@/assets/PanMMOlla.jpeg'
+import EspressoShot from '@/assets/EspressoShot.jpeg'
+import panini from '@/assets/panini.jpeg'
+
 export default {
   name: 'Ubicacion',
   data() {
     return {
       model: 0,
       images: [
-        // random places
-        {
-          src: 'https://img.rtve.es/imagenes/cafeterias-bonitas-espana-dia-internacional-cafe/1601401240006.jpg',
-        },
-        {
-          src: 'https://mardomdecor.com/app/uploads/2023/03/CAFETERIA-2.jpeg',
-        },
-        {
-          src: 'https://pisoocho.com.mx/wp-content/uploads/2020/06/Cafe-y-IPAD-horizontal-min-scaled.jpg',
-        },
-        {
-          src: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/8e/35/0e/tomate-cafe.jpg',
-        },
+        { src: barra, id: 1, title: 'Barra', description: 'Barra' },
+        { src: entradaDesdeCalle, id: 2, title: 'entrada', description: 'entrada por calle' },
+        { src: NumOficial, id: 3, title: 'num', description: 'num' },
+        { src: PanMMOlla, id: 4, title: 'panMM', description: 'panMM' },
+        { src: EspressoShot, id: 5, title: 'es', description: 'es' },
+        { src: panini, id: 6, title: 'panini', description: 'panini' },
+        
       ]
     }
   }
@@ -30,7 +32,9 @@ export default {
   </h2>
   <div class="ubicacion">
     <div class="map-section">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3393.9178685806132!2d-106.4320536111425!3d31.71813846173373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDQzJzA1LjMiTiAxMDbCsDI1JzU1LjUiVw!5e0!3m2!1ses-419!2smx!4v1723755532745!5m2!1ses-419!2smx" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3393.9178685806132!2d-106.4320536111425!3d31.71813846173373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDQzJzA1LjMiTiAxMDbCsDI1JzU1LjUiVw!5e0!3m2!1ses-419!2smx!4v1723755532745!5m2!1ses-419!2smx" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      https://maps.app.goo.gl/nv8VnbXTG5U2pobS8 -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d17058.245357820906!2d-106.4440839!3d31.7166562!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d29bcba3a3b%3A0x80f928ea7be621bf!2sLuna&#39;s%20Caf%C3%A9!5e1!3m2!1sen!2smx!4v1726947249870!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <v-carousel class="carrousel">
       <v-carousel-item v-for="image in images" :src="image.src" cover class="carrousel-image">
