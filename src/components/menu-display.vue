@@ -1,8 +1,12 @@
 <script>
-import jugos from '@/assets/jugos.jpeg'
+import orangeCoffe from '@/assets/orangeCoffe.jpeg'
 import lonche from '@/assets/lonche.jpeg'
 import pan from '@/assets/pan.jpeg'
 import panini from '@/assets/panini.jpeg'
+import mocha from '@/assets/mochaFrio.jpeg'
+import galleta1 from '@/assets/galletaNutella.jpeg'
+import galleta2 from '@/assets/GalletasLuna.jpeg'
+
 import SvgIcon from '@jamescoyle/vue-icon';
 import { mdiHeart } from '@mdi/js';
 
@@ -21,10 +25,13 @@ export default {
     return {
       model: 0,  // Controla la diapositiva actual del carrusel
       items: [
-        { src: jugos, id: 1, title: 'Cafe', description: 'Orange Coffe' },
-        { src: lonche, id: 2, title: 'Paninis', description: 'Panini Original' },
-        { src: pan, id: 3, title: 'Panaderia', description: 'Pan dulce y salado' },
-        { src: panini, id: 4, title: 'Panini', description: 'Panini Original' },
+        { src: orangeCoffe, id: 1, title: 'Cafe', description: 'Orange Coffe' },
+        { src: mocha, id:2, tittle: 'Cafe frio', description: 'Mocha Frio'},
+        { src: lonche, id: 3, title: 'Paninis', description: 'Panini Original' },
+        { src: pan, id: 4, title: 'Panaderia', description: 'Pan dulce y salado' },
+        { src: panini, id: 5, title: 'Panini', description: 'Panini Original' },
+        { src: galleta1, id: 6, title: 'Galleta', description: 'GalletaNutella' },
+        { src: galleta2, id: 6, title: 'Galletas', description: 'Galletas de chispas' },
       ],
       heart: mdiHeart,
     }
