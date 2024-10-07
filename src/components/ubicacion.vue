@@ -1,11 +1,13 @@
 <script>
 import jugos from '@/assets/jugos.jpeg'
-import barra from '@/assets/barra.jpeg'
+import barra from '@/assets/barraMich.jpeg'
 import entradaDesdeCalle from '@/assets/entradaDesdeCalle.jpeg'
 import NumOficial from '@/assets/NumOficial.jpeg'
 import PanMMOlla from '@/assets/PanMMOlla.jpeg'
 import EspressoShot from '@/assets/EspressoShot.jpeg'
 import panini from '@/assets/panini.jpeg'
+import abierto from '@/assets/abierto.jpeg'
+import panMuerto from '@/assets/panMuerto.jpeg'
 
 export default {
   name: 'Ubicacion',
@@ -19,6 +21,8 @@ export default {
         { src: PanMMOlla, id: 4, title: 'panMM', description: 'panMM' },
         { src: EspressoShot, id: 5, title: 'es', description: 'es' },
         { src: panini, id: 6, title: 'panini', description: 'panini' },
+        { src: abierto, id: 7, title: 'abierto', description: 'abierto' },
+        { src: panMuerto, id: 8, title: 'panMuerto', description: 'pan de muerto prro' },
         
       ]
     }
