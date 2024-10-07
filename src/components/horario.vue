@@ -20,23 +20,23 @@ export default {
         },
         {
           day: 'Miercoles',
-          time: '4:00pm - 9:00pm',
+          time: '5:00pm - 9:00pm',
         },
         {
           day: 'Jueves',
-          time: '4:00pm - 9:00pm',
+          time: '5:00pm - 9:00pm',
         },
         {
           day: 'Viernes',
-          time: '4:00pm - 9:00pm',
+          time: '5:00pm - 9:00pm',
         },
         {
           day: 'Sabado',
-          time: '9:00am - 9:00pm',
+          time: '9:00am - 3:00pm',
         },
         {
           day: 'Domingo',
-          time: '9:00am - 9:00pm',
+          time: '9:00am - 3:00pm',
         }
       ],
     }
